@@ -29,7 +29,7 @@ class Router
 
 
         // Obtener la URL actual desde REQUEST_URI
-        $urlActual = $_SERVER['REQUEST_URI'] ?? '/';
+        $urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
 
         // Remover el query string si existe
         $urlActual = strtok($urlActual, '?');

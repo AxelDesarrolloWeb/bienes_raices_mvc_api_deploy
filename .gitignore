@@ -3,3 +3,4 @@ vendor/
 package-lock.json
 composer.lock
 includes/.env
+domcloud.yaml
